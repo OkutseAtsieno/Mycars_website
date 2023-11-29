@@ -1,0 +1,46 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About{% endblock %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/images/banner/b1.jpg' %}" class="d-block w-100" alt="banner image">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/images/banner/b2.jpg' %}" class="d-block w-100" alt="banner image">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/images/banner/b3.jpg' %}" class="d-block w-100" alt="banner image">
+    </div>
+  </div>
+</div>
+{% endblock banner-slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+  <br>
+  <h2 class="text-center">About Us</h2>
+  <div class="row container">
+    <p class="fs-4 text-center"> We are a certified dairy farm located at Kinangop in Kenya <br> We offer milk products that are nutritious and farm fresh, the farm is growing each day and our greatest desire is to bring to existence the consumption of milk products</p>
+  </div>
+
+  <br><br>
+  <h2 class="text-center">MISSION</h2>
+  <div class="row container">
+    <p class="fs-4 text-center">"To provide high-quality, nutritious dairy products to our customers, sourced from well-cared-for, sustainable farms. We are committed to promoting health and well-being through our fresh and wholesome dairy offerings,
+         fostering strong relationships with our farming partners, 
+         and contributing positively to the communities we serve."</p>
+  </div>
+</div>
+<h2 class="text-center">VISION</h2>
+  <div class="row container">
+    <p class="fs-4 text-center">"To be a leading and innovative dairy company,
+         recognized for our commitment to excellence, sustainability, and customer satisfaction. We envision a future where our dairy products are an essential part of a healthy and balanced lifestyle, and where our practices contribute to a more sustainable and resilient food system. We aspire to be a trusted partner to our farmers, employees, customers, and communities, driven by a passion for quality
+         and a dedication to the well-being of both people and the planet."</p>
+  </div>
+</div>
+{% endblock main-content %}
